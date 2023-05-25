@@ -12,4 +12,18 @@ module.exports = {
 			publicPath: "/assets/",
 		},
 	},
+	module: {
+		rules: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: {
+					loader: "babel-loader",
+					options: {
+						presets: ["@babel/preset-env"],
+					},
+				},
+			},
+		],
+	},
 }; // how we want the webpack to work, will run on the computer and not on the browser
