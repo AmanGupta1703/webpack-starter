@@ -5,3 +5,4 @@ const greet = (name) => {
 greet("mario");
 greet("luigi");
 greet("ryu");
+greet("tanaka");

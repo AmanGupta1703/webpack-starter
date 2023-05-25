@@ -4,13 +4,16 @@
 	"description": "Modern JavaScipt - Module 19",
 	"main": "index.js",
 	"scripts": {
-		"babel": "babel src/index.js -w -o dist/assets/bundle.js"
+		"babel": "babel src/index.js -w -o dist/assets/bundle.js",
+		"webpack": "webpack"
 	},
 	"author": "Aman",
 	"license": "ISC",
 	"devDependencies": {
 		"@babel/cli": "^7.21.5",
 		"@babel/core": "^7.21.8",
-		"@babel/preset-env": "^7.21.5"
+		"@babel/preset-env": "^7.21.5",
+		"webpack": "^5.84.0",
+		"webpack-cli": "^5.1.1"
 	}
 }
