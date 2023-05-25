@@ -1,9 +1,15 @@
 const path = require("path");
- 
+
 module.exports = {
 	entry: "./src/index.js", // where our source live
 	output: {
 		path: path.resolve(__dirname, "dist/assets"),
 		filename: "bundle.js",
-	},  // where to output it
+	}, // where to output it
+	devServer: {
+		static: path.resolve(__dirname, "dist"),
+		devMiddleware: {
+			publicPath: "/assets/",
+		},
+	},
 }; // how we want the webpack to work, will run on the computer and not on the browser
