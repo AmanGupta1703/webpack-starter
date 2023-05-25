@@ -4,9 +4,8 @@
 	"description": "Modern JavaScipt - Module 19",
 	"main": "index.js",
 	"scripts": {
-		"babel": "babel src/index.js -w -o dist/assets/bundle.js",
-		"webpack": "webpack -w",
-		"serve": "webpack-dev-server"
+		"build": "webpack --mode production",
+		"serve": "webpack-dev-server --mode development"
 	},
 	"author": "Aman",
 	"license": "ISC",
