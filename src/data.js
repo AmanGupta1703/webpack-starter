@@ -6,12 +6,15 @@ const users = [
 	{ name: "peach", premium: false },
 ];
 
-const getPremUsers = users => users.filter(users => users.premium);
+const getPremUsers = users => users.filter(user => user.premium);
+
+const getNonPremUsers = users => users.filter(user => !user.premium);
 
 export default users;
 
 export {
-    getPremUsers
+    getPremUsers,
+	getNonPremUsers
 };
 
 // export {
